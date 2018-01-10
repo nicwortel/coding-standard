@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <description>My personal coding standard</description>
+
+    <!-- Extend from PSR-2 -->
+    <rule ref="PSR2"/>
+
+    <!-- Enforce some of the rules of PSR-12 -->
+
+    <!-- Import statements MUST never begin with a leading backslash as they
+    must always be fully qualified. -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+
+    <!-- Visibility MUST be declared on all constants if your project PHP
+    minimum version supports constant visibilities (PHP 7.1 or later). -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+
+    <!-- When you have a return type declaration present there MUST be one space
+    after the colon followed by the type declaration. The colon and declaration
+    MUST be on the same line as the argument list closing parentheses with no
+    spaces between the two characters. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+
+    <!-- In nullable type declarations there MUST NOT be a space between the
+    question mark and the type. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+
+    <!-- Declare statements MUST contain no spaces and MUST be exactly
+    declare(strict_types=1) (with an optional semi-colon terminator). -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="1"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Add some constraints of my own -->
+
+    <!-- Sort use statements and report unused ones -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+
+    <!-- Use PHP native type hints whenever possible. Use docblocks only when
+    the use of native type hints is impossible. -->
+    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
+
+    <!-- Ensure that arguments with a default type of null are marked nullable -->
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+
+    <!-- Enforce the use of bool instead of boolean and int instead of int in
+    docblocks -->
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
+
+    <!-- Require the short array syntax -->
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+    <!-- Enforce trailing commas in multi-line arrays -->
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+
+    <!-- Enforce strict comparisons (=== instead of ==) -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators" />
+
+    <!-- Disallow Yoda conditions -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
+
+    <!-- Disallow the use of certain annotations -->
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations">
+        <properties>
+            <property name="forbiddenAnnotations" type="array" value="@author,
+                    @created,
+                    @version,
+                    @package,
+                    @copyright,
+                    @license"/>
+        </properties>
+    </rule>
+</ruleset>
