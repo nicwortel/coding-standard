@@ -37,7 +37,11 @@
     <!-- Add some constraints of my own -->
 
     <!-- Sort use statements and report unused ones -->
-    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
 
     <!-- Use PHP native type hints whenever possible. Use docblocks only when
