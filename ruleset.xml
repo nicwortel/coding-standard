@@ -71,7 +71,9 @@
                     @version,
                     @package,
                     @copyright,
-                    @license"/>
+                    @license,
+                    @constructor,
+                    @type"/>
         </properties>
     </rule>
 </ruleset>
