@@ -41,10 +41,10 @@
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
 
     <!-- Use PHP native type hints whenever possible. Use docblocks only when
-    the use of native type hints is impossible. -->
+    native type hints don't provide enough information. -->
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration"/>
 
-    <!-- Ensure that arguments with a default type of null are marked nullable -->
+    <!-- Ensure that arguments with a default value of null are marked nullable -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
 
     <!-- Enforce the use of bool instead of boolean and int instead of int in
