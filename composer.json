@@ -1,6 +1,7 @@
 {
     "name": "nicwortel/coding-standard",
     "description": "My ruleset for PHP CodeSniffer",
+    "type": "phpcodesniffer-standard",
     "require": {
         "php": "^7.1",
         "squizlabs/php_codesniffer": "^3.2",
