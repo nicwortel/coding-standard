@@ -1,7 +1,7 @@
 
 FILE: tests/Bar.php
 ------------------------------------------------------------------------------------------------------------------------
-FOUND 22 ERRORS AFFECTING 15 LINES
+FOUND 22 ERRORS AFFECTING 16 LINES
 ------------------------------------------------------------------------------------------------------------------------
   1 | ERROR | [x] Expected 1 newlines between PHP open tag and declare statement, found 0.
   1 | ERROR | [x] Expected strict_types=1, found strict_types = 1.
@@ -20,8 +20,8 @@ FOUND 22 ERRORS AFFECTING 15 LINES
     |       |     parameter $time.
  26 | ERROR | [x] Parameter $timezone has null default value, but is not marked as nullable.
  26 | ERROR | [x] There must be no whitespace between closing parenthesis and return type colon.
- 36 | ERROR | [x] Expected "bool" but found "boolean" in @param annotation.
- 36 | ERROR | [x] Expected "int" but found "integer" in @return annotation.
+ 32 | ERROR | [x] Expected "bool" but found "boolean" in @param annotation.
+ 34 | ERROR | [x] Expected "int" but found "integer" in @return annotation.
  38 | ERROR | [x] Operator == is disallowed, use === instead.
  38 | ERROR | [x] Yoda comparisons are disallowed.
  42 | ERROR | [x] Multiline arrays must have a trailing comma after the last element.
