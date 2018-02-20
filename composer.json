@@ -2,6 +2,7 @@
     "name": "nicwortel/coding-standard",
     "description": "My ruleset for PHP CodeSniffer",
     "type": "phpcodesniffer-standard",
+    "license": "MIT",
     "require": {
         "php": "^7.1",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
