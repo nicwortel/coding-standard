@@ -48,7 +48,7 @@
     native type hints don't provide enough information. -->
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
         <properties>
-            <property name="usefulAnnotations" value="@test,@dataProvider"/>
+            <property name="usefulAnnotations" type="array" value="@test,@dataProvider"/>
         </properties>
     </rule>
 
