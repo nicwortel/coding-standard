@@ -1,12 +1,12 @@
 
 FILE: tests/Bar.php
 ------------------------------------------------------------------------------------------------------------------------
-FOUND 22 ERRORS AFFECTING 16 LINES
+FOUND 26 ERRORS AFFECTING 18 LINES
 ------------------------------------------------------------------------------------------------------------------------
   1 | ERROR | [x] Expected 1 newlines between PHP open tag and declare statement, found 0.
   1 | ERROR | [x] Expected strict_types=1, found strict_types = 1.
   5 | ERROR | [x] Type SplFileInfo is not used in this file.
-  6 | ERROR | [x] Use statements are incorrectly ordered. The first wrong one is DateTime.
+  6 | ERROR | [x] Use statements should be sorted alphabetically. The first wrong one is DateTime.
   6 | ERROR | [x] Use statement cannot start with a backslash.
   9 | ERROR | [x] Use of annotation @author is forbidden.
  10 | ERROR | [x] Use of annotation @version is forbidden.
@@ -15,19 +15,23 @@ FOUND 22 ERRORS AFFECTING 16 LINES
  13 | ERROR | [x] Use of annotation @package is forbidden.
  14 | ERROR | [x] Use of annotation @license is forbidden.
  18 | ERROR | [ ] Constant \Foo\Bar::NOW visibility missing.
+ 24 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
  26 | ERROR | [x] Method \Foo\Bar::getCurrentDate() does not need documentation comment.
  26 | ERROR | [x] There must be no whitespace between parameter type hint nullability symbol and parameter type hint of
     |       |     parameter $time.
  26 | ERROR | [x] Parameter $timezone has null default value, but is not marked as nullable.
  26 | ERROR | [x] There must be no whitespace between closing parenthesis and return type colon.
+ 28 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
  32 | ERROR | [x] Expected "bool" but found "boolean" in @param annotation.
  34 | ERROR | [x] Expected "int" but found "integer" in @return annotation.
  38 | ERROR | [x] Operator == is disallowed, use === instead.
  38 | ERROR | [x] Yoda comparisons are disallowed.
- 42 | ERROR | [x] Multiline arrays must have a trailing comma after the last element.
- 46 | ERROR | [x] Short array syntax must be used to define arrays
+ 43 | ERROR | [x] Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.
+ 43 | ERROR | [x] Multiline arrays must have a trailing comma after the last element.
+ 47 | ERROR | [x] Function array_filter() should not be referenced via a fallback global name, but via a use statement.
+ 47 | ERROR | [x] Short array syntax must be used to define arrays
 ------------------------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 21 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 25 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------------------------
 
 

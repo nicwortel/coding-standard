@@ -36,6 +36,16 @@
 
     <!-- Add some constraints of my own -->
 
+    <!-- Enforce importing of all classes, functions and constants from other
+    namespaces (including the global namespace) -->
+    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+            <property name="allowFallbackGlobalFunctions" value="false"/>
+            <property name="allowFallbackGlobalConstants" value="false"/>
+        </properties>
+    </rule>
+
     <!-- Sort use statements and report unused ones -->
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
         <properties>

@@ -21,11 +21,11 @@ final class Bar
      * @param null|string $time
      * @param string|null $timezone
      *
-     * @return DateTime
+     * @return \DateTime
      */
     public function getCurrentDate(? string $time, string $timezone = null) : DateTime
     {
-        return new DateTime($time);
+        return new \DateTime($time);
     }
 
     /**
@@ -39,10 +39,11 @@ final class Bar
             return [
                 1,
                 2,
-                3
+                3,
+                PHP_VERSION
             ];
         }
 
-        return array(1,2,3);
+        return array_filter(array(1,2,3));
     }
 }
