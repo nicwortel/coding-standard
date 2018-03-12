@@ -76,7 +76,7 @@
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 
     <!-- Enforce strict comparisons (=== instead of ==) -->
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators" />
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
 
     <!-- Disallow Yoda conditions -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
