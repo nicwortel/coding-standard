@@ -1,0 +1,110 @@
+
+FILE: tests/incorrect/arrays.php
+-------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 2 LINES
+-------------------------------------------------------------------------------------
+ 4 | ERROR | [x] Short array syntax must be used to define arrays
+ 9 | ERROR | [x] MultiLine arrays must have a trailing comma after the last element.
+-------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------
+
+
+FILE: tests/incorrect/class-constant-visibility.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 8 | ERROR | Constant \Foo\Bar::NOW visibility missing.
+----------------------------------------------------------------------
+
+
+FILE: tests/incorrect/commenting.php
+----------------------------------------------------------------------
+FOUND 7 ERRORS AFFECTING 7 LINES
+----------------------------------------------------------------------
+  7 | ERROR | [x] Use of annotation @author is forbidden.
+  8 | ERROR | [x] Use of annotation @created is forbidden.
+  9 | ERROR | [x] Use of annotation @version is forbidden.
+ 10 | ERROR | [x] Use of annotation @package is forbidden.
+ 11 | ERROR | [x] Use of annotation @copyright is forbidden.
+ 12 | ERROR | [x] Use of annotation @license is forbidden.
+ 17 | ERROR | [x] Use of annotation @constructor is forbidden.
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: tests/incorrect/control-structures.php
+----------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 6 | ERROR | [x] Operator == is disallowed, use === instead.
+ 6 | ERROR | [x] Yoda comparisons are disallowed.
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: tests/incorrect/namespaces.php
+------------------------------------------------------------------------------------------------------------------------
+FOUND 8 ERRORS AFFECTING 6 LINES
+------------------------------------------------------------------------------------------------------------------------
+  6 | ERROR | [x] Type SplFileInfo is not used in this file.
+  7 | ERROR | [x] Type DateTime is not used in this file.
+  7 | ERROR | [x] Use statements should be sorted alphabetically. The first wrong one is DateTime.
+  7 | ERROR | [x] Use statement cannot start with a backslash.
+  9 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
+ 10 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
+ 12 | ERROR | [x] Function array_filter() should not be referenced via a fallback global name, but via a use statement.
+ 14 | ERROR | [x] Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.
+------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: tests/incorrect/strict-types-missing.php
+----------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 1 | ERROR | [x] Missing declare(strict_types=1).
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
+FILE: tests/incorrect/strict-types.php
+------------------------------------------------------------------------------------------
+FOUND 2 ERRORS AFFECTING 1 LINE
+------------------------------------------------------------------------------------------
+ 1 | ERROR | [x] Expected 1 newlines between PHP open tag and declare statement, found 0.
+ 1 | ERROR | [x] Expected strict_types=1, found strict_types = 1.
+------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------
+
+
+FILE: tests/incorrect/type-hints.php
+------------------------------------------------------------------------------------------------------------------------
+FOUND 11 ERRORS AFFECTING 8 LINES
+------------------------------------------------------------------------------------------------------------------------
+  9 | ERROR | [x] Function doesNotNeedDocumentationComment() does not need documentation comment.
+ 13 | ERROR | [x] There must be no whitespace between parameter type hint nullability symbol and parameter type hint of
+    |       |     parameter $input.
+ 17 | ERROR | [x] There must be exactly one space between return type hint colon and return type hint.
+ 17 | ERROR | [x] There must be no whitespace between closing parenthesis and return type colon.
+ 21 | ERROR | [ ] Function missingTypeHints() does not have parameter type hint nor @param annotation for its parameter
+    |       |     $input.
+ 21 | ERROR | [ ] Function missingTypeHints() does not have return type hint nor @return annotation for its return
+    |       |     value.
+ 26 | ERROR | [ ] Function missingTraversableAnnotations() does not have @param annotation for its traversable
+    |       |     parameter $input.
+ 26 | ERROR | [ ] Function missingTraversableAnnotations() does not have @return annotation for its traversable return
+    |       |     value.
+ 30 | ERROR | [x] Parameter $input has null default value, but is not marked as nullable.
+ 35 | ERROR | [x] Expected "int" but found "integer" in @param annotation.
+ 37 | ERROR | [x] Expected "bool" but found "boolean" in @return annotation.
+------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------------------------
+
+
