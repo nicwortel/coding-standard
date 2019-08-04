@@ -45,6 +45,16 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
+FILE: tests/incorrect/imports-order.php
+------------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------------------------------
+ 8 | ERROR | [x] Use statements should be sorted alphabetically. The first wrong one is array_filter.
+------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------
+
+
 FILE: tests/incorrect/namespaces.php
 ------------------------------------------------------------------------------------------------------------------------
 FOUND 8 ERRORS AFFECTING 6 LINES
