@@ -62,7 +62,7 @@
     native type hints don't provide enough information. -->
     <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
         <properties>
-            <property name="usefulAnnotations" type="array" value="@test,@dataProvider"/>
+            <property name="allAnnotationsAreUseful" value="true"/>
         </properties>
     </rule>
 
@@ -80,7 +80,7 @@
     <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 
     <!-- Enforce strict comparisons (=== instead of ==) -->
-    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEqualOperators"/>
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
 
     <!-- Disallow Yoda conditions -->
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
