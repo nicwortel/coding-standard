@@ -60,11 +60,9 @@
 
     <!-- Use PHP native type hints whenever possible. Use docblocks only when
     native type hints don't provide enough information. -->
-    <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
-        <properties>
-            <property name="allAnnotationsAreUseful" value="true"/>
-        </properties>
-    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
 
     <!-- Ensure that arguments with a default value of null are marked nullable -->
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>

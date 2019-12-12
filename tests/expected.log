@@ -95,9 +95,10 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: tests/incorrect/type-hints.php
 ------------------------------------------------------------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 8 LINES
+FOUND 12 ERRORS AFFECTING 9 LINES
 ------------------------------------------------------------------------------------------------------------------------
-  9 | ERROR | [x] Function doesNotNeedDocumentationComment() does not need documentation comment.
+  5 | ERROR | [x] Function doesNotNeedDocumentationComment() has useless @param annotation for parameter $input.
+  7 | ERROR | [x] Function doesNotNeedDocumentationComment() has useless @return annotation.
  13 | ERROR | [x] There must be no whitespace between parameter type hint nullability symbol and parameter type hint of
     |       |     parameter $input.
  17 | ERROR | [x] There must be exactly one space between return type hint colon and return type hint.
@@ -114,7 +115,7 @@ FOUND 11 ERRORS AFFECTING 8 LINES
  35 | ERROR | [x] Expected "int" but found "integer" in @param annotation.
  37 | ERROR | [x] Expected "bool" but found "boolean" in @return annotation.
 ------------------------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 7 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------------------------
 
 

@@ -34,9 +34,9 @@ function nullableDefaultValue(string $input = null): void
 /**
  * @param integer[] $input
  *
- * @return boolean
+ * @return boolean[]
  */
-function longDocBlockTypeHints(array $input): bool
+function longDocBlockTypeHints(array $input): array
 {
 }
 
