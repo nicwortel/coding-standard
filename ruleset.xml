@@ -2,39 +2,12 @@
 <ruleset>
     <description>My personal coding standard</description>
 
-    <!-- Extend from PSR-2 -->
-    <rule ref="PSR2"/>
+    <!-- Extend from PSR-12 -->
+    <rule ref="PSR12"/>
 
-    <!-- Enforce some of the rules of PSR-12 -->
-
-    <!-- Import statements MUST never begin with a leading backslash as they
-    must always be fully qualified. -->
-    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
-
-    <!-- Visibility MUST be declared on all constants if your project PHP
-    minimum version supports constant visibilities (PHP 7.1 or later). -->
-    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
-
-    <!-- When you have a return type declaration present there MUST be one space
-    after the colon followed by the type declaration. The colon and declaration
-    MUST be on the same line as the argument list closing parentheses with no
-    spaces between the two characters. -->
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
-
-    <!-- In nullable type declarations there MUST NOT be a space between the
-    question mark and the type. -->
-    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-
-    <!-- Declare statements MUST contain no spaces and MUST be exactly
-    declare(strict_types=1) (with an optional semi-colon terminator). -->
-    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
-        <properties>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" value="1"/>
-            <property name="spacesCountAroundEqualsSign" value="0"/>
-        </properties>
+    <rule ref="PSR12.Properties.ConstantVisibility">
+        <type>error</type>
     </rule>
-
-    <!-- Add some constraints of my own -->
 
     <!-- Enforce importing of all classes, functions and constants from other
     namespaces (including the global namespace) -->
