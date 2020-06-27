@@ -11,6 +11,17 @@
         <type>error</type>
     </rule>
 
+    <!-- Require strict types declaration -->
+    <!-- Exclude whitespace rules which are already covered by the PSR12 standard -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectStrictTypesFormat"/>
+    </rule>
+
     <!-- Enforce importing of all classes, functions and constants from other
     namespaces (including the global namespace) -->
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
