@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Foo;
 
-use SplFileInfo;
 use \DateTime;
 
 /** @var \DateTime $now */

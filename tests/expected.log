@@ -45,6 +45,16 @@ PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ----------------------------------------------------------------------
 
 
+FILE: tests/incorrect/imports-alphabetical-order.php
+--------------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------------------------
+ 7 | ERROR | [x] Use statements should be sorted alphabetically. The first wrong one is DateTime.
+--------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------------------------
+
+
 FILE: tests/incorrect/imports-order.php
 ------------------------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -55,20 +65,30 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------
 
 
+FILE: tests/incorrect/imports-unused.php
+----------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+----------------------------------------------------------------------
+ 6 | ERROR | [x] Type DateTime is not used in this file.
+ 7 | ERROR | [x] Type array_filter is not used in this file.
+ 8 | ERROR | [x] Type PHP_VERSION is not used in this file.
+----------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------
+
+
 FILE: tests/incorrect/namespaces.php
 ------------------------------------------------------------------------------------------------------------------------
-FOUND 8 ERRORS AFFECTING 6 LINES
+FOUND 6 ERRORS AFFECTING 5 LINES
 ------------------------------------------------------------------------------------------------------------------------
-  6 | ERROR | [x] Type SplFileInfo is not used in this file.
-  7 | ERROR | [x] Type DateTime is not used in this file.
-  7 | ERROR | [x] Use statements should be sorted alphabetically. The first wrong one is DateTime.
-  7 | ERROR | [x] Use statement cannot start with a backslash.
+  6 | ERROR | [x] Type DateTime is not used in this file.
+  6 | ERROR | [x] Use statement cannot start with a backslash.
+  8 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
   9 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
- 10 | ERROR | [x] Class \DateTime should not be referenced via a fully qualified name, but via a use statement.
- 12 | ERROR | [x] Function array_filter() should not be referenced via a fallback global name, but via a use statement.
- 14 | ERROR | [x] Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.
+ 11 | ERROR | [x] Function array_filter() should not be referenced via a fallback global name, but via a use statement.
+ 13 | ERROR | [x] Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.
 ------------------------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------------------------
 
 
