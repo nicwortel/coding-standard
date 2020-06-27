@@ -1,7 +1,7 @@
 {
     "name": "nicwortel/coding-standard",
-    "description": "My ruleset for PHP CodeSniffer",
     "type": "phpcodesniffer-standard",
+    "description": "My ruleset for PHP CodeSniffer",
     "license": "MIT",
     "require": {
         "php": "^7.2",
