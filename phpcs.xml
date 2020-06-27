@@ -3,5 +3,5 @@
          xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <arg name="basepath" value="."/>
 
-    <rule ref="ruleset.xml"/>
+    <rule ref="NicWortel"/>
 </ruleset>
