@@ -6,9 +6,29 @@
 ![PHP version from Packagist](https://img.shields.io/packagist/php-v/nicwortel/coding-standard.svg)
 
 This is my ruleset for [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer).
+It's based on the [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/),
+enhanced with sniffs from the [Slevomat Coding Standard](https://github.com/slevomat/coding-standard).
 
 ## Installation
 
 ```bash
 composer require --dev nicwortel/coding-standard
 ```
+
+## Usage
+
+Create a `phpcs.xml` file:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <arg name="basepath" value="."/>
+
+    <file>src/</file>
+
+    <rule ref="NicWortel"/>
+</ruleset>
+```
+
+Then you can run `vendor/bin/phpcs`.
