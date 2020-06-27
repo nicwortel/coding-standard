@@ -12,3 +12,9 @@ cache:
 install: composer install
 
 script: make test
+
+jobs:
+  include:
+    - name: Test against lowest allowed dependency versions
+      php: '7.2'
+      install: composer update --prefer-lowest
