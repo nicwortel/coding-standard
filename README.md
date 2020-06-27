@@ -12,7 +12,7 @@ enhanced with sniffs from the [Slevomat Coding Standard](https://github.com/slev
 ## Installation
 
 ```bash
-composer require --dev nicwortel/coding-standard
+composer require --dev squizlabs/php_codesniffer nicwortel/coding-standard
 ```
 
 ## Usage
