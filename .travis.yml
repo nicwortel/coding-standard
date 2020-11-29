@@ -1,9 +1,9 @@
 language: php
 
 php:
-  - 7.2
   - 7.3
   - 7.4
+  - 8.0
 
 cache:
   directories:
@@ -16,5 +16,5 @@ script: make test
 jobs:
   include:
     - name: Test against lowest allowed dependency versions
-      php: '7.2'
+      php: '7.3'
       install: composer update --prefer-lowest
