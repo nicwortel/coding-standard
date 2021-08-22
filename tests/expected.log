@@ -109,14 +109,15 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: tests/incorrect/strict-types.php
 -----------------------------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 1 LINE
+FOUND 5 ERRORS AFFECTING 1 LINE
 -----------------------------------------------------------------------------------------------------
  1 | ERROR | [x] Header blocks must be separated by a single blank line
  1 | ERROR | [x] Opening PHP tag must be on a line by itself
+ 1 | ERROR | [x] Expected 1 line before declare statement, found 0.
  1 | ERROR | [x] Expected no space between directive and the equals sign in a declare statement
  1 | ERROR | [x] Expected no space between equal sign and the directive value in a declare statement
 -----------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 -----------------------------------------------------------------------------------------------------
 
 
