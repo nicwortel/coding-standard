@@ -1,4 +1,3 @@
-File,Line,Column,Type,Message,Source,Severity,Fixable
 "tests/incorrect/arrays.php",10,5,error,"Multi-line arrays must have a trailing comma after the last element.",SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma,5,1
 "tests/incorrect/arrays.php",5,20,error,"Short array syntax must be used to define arrays",Generic.Arrays.DisallowLongArraySyntax.Found,5,1
 "tests/incorrect/class-constant-visibility.php",9,5,error,"Visibility must be declared on all constants if your project supports PHP 7.1 or later",PSR12.Properties.ConstantVisibility.NotFound,5,0
@@ -16,8 +15,8 @@ File,Line,Column,Type,Message,Source,Severity,Fixable
 "tests/incorrect/imports-order.php",8,22,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-order.php",9,1,error,"The function-based use imports must follow the class-based use imports in the file header",PSR12.Files.FileHeader.IncorrectOrder,5,0
 "tests/incorrect/imports-order.php",9,1,error,"Use statements should be sorted alphabetically. The first wrong one is array_filter.",SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses,5,1
-"tests/incorrect/imports-unused.php",7,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-unused.php",7,1,error,"Type DateTime is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/imports-unused.php",7,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-unused.php",8,1,error,"Type array_filter is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
 "tests/incorrect/imports-unused.php",8,26,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-unused.php",9,1,error,"Type PHP_VERSION is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
@@ -45,3 +44,4 @@ File,Line,Column,Type,Message,Source,Severity,Fixable
 "tests/incorrect/type-hints.php",38,4,error,"Expected \"bool\" but found \"boolean\" in @return annotation.",SlevomatCodingStandard.TypeHints.LongTypeHints.UsedLongTypeHint,5,1
 "tests/incorrect/type-hints.php",6,4,error,"Function doesNotNeedDocumentationComment() has useless @param annotation for parameter $input.",SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation,5,1
 "tests/incorrect/type-hints.php",8,4,error,"Function doesNotNeedDocumentationComment() has useless @return annotation.",SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation,5,1
+File,Line,Column,Type,Message,Source,Severity,Fixable
