@@ -1,12 +1,10 @@
-REPORT = full
-
 vendor: composer.json
 
 .PHONY: check
 check: vendor
 	vendor/bin/phpcs tests/correct/
-	vendor/bin/phpcs $(shell find tests/incorrect/* | sort) --report=$(REPORT) --report-file=phpcs.log --report-width=120; diff tests/expected.log phpcs.log
+	vendor/bin/phpcs $(shell find tests/incorrect/* | sort) --report=csv --report-file=phpcs.csv; diff tests/expected.csv phpcs.csv
 
-.PHONY: tests/expected.log
-tests/expected.log: vendor
-	vendor/bin/phpcs $(shell find tests/incorrect/* | sort) --report=$(REPORT) --report-file=$@ --report-width=120
+.PHONY: tests/expected.csv
+tests/expected.csv: vendor
+	vendor/bin/phpcs $(shell find tests/incorrect/* | sort) --report=csv --report-file=$@

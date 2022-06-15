@@ -1,0 +1,48 @@
+File,Line,Column,Type,Message,Source,Severity,Fixable
+"tests/incorrect/arrays.php",5,20,error,"Short array syntax must be used to define arrays",Generic.Arrays.DisallowLongArraySyntax.Found,5,1
+"tests/incorrect/arrays.php",10,5,error,"Multi-line arrays must have a trailing comma after the last element.",SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma,5,1
+"tests/incorrect/class-constant-visibility.php",9,5,error,"Visibility must be declared on all constants if your project supports PHP 7.1 or later",PSR12.Properties.ConstantVisibility.NotFound,5,0
+"tests/incorrect/commenting.php",8,4,error,"Use of annotation @author is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",9,4,error,"Use of annotation @created is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",10,4,error,"Use of annotation @version is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",11,4,error,"Use of annotation @package is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",12,4,error,"Use of annotation @copyright is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",13,4,error,"Use of annotation @license is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/commenting.php",18,8,error,"Use of annotation @constructor is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
+"tests/incorrect/control-structures.php",7,11,error,"Operator == is disallowed, use === instead.",SlevomatCodingStandard.Operators.DisallowEqualOperators.DisallowedEqualOperator,5,1
+"tests/incorrect/control-structures.php",7,11,error,"Yoda comparisons are disallowed.",SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison,5,1
+"tests/incorrect/imports-alphabetical-order.php",8,1,error,"Use statements should be sorted alphabetically. The first wrong one is DateTime.",SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses,5,1
+"tests/incorrect/imports-order.php",7,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/imports-order.php",8,22,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/imports-order.php",9,1,error,"The function-based use imports must follow the class-based use imports in the file header",PSR12.Files.FileHeader.IncorrectOrder,5,0
+"tests/incorrect/imports-order.php",9,1,error,"Use statements should be sorted alphabetically. The first wrong one is array_filter.",SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses,5,1
+"tests/incorrect/imports-unused.php",7,1,error,"Type DateTime is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/imports-unused.php",7,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/imports-unused.php",8,1,error,"Type array_filter is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/imports-unused.php",8,26,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/imports-unused.php",9,1,error,"Type PHP_VERSION is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/namespaces.php",7,1,error,"Type DateTime is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/namespaces.php",7,5,error,"Import statements must not begin with a leading backslash",PSR12.Files.ImportStatement.LeadingSlash,5,1
+"tests/incorrect/namespaces.php",9,5,error,"Class \DateTime should not be referenced via a fully qualified name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName,5,1
+"tests/incorrect/namespaces.php",10,12,error,"Class \DateTime should not be referenced via a fully qualified name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName,5,1
+"tests/incorrect/namespaces.php",12,10,error,"Function array_filter() should not be referenced via a fallback global name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName,5,1
+"tests/incorrect/namespaces.php",14,12,error,"Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName,5,1
+"tests/incorrect/strict-types-missing.php",1,1,error,"Missing declare(strict_types=1).",SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing,5,1
+"tests/incorrect/strict-types.php",1,1,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/strict-types.php",1,1,error,"Opening PHP tag must be on a line by itself",PSR12.Files.OpenTag.NotAlone,5,1
+"tests/incorrect/strict-types.php",1,7,error,"Expected 1 line before declare statement, found 0.",SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBeforeDeclare,5,1
+"tests/incorrect/strict-types.php",1,28,error,"Expected no space between directive and the equals sign in a declare statement",PSR12.Files.DeclareStatement.SpaceFoundAfterDirective,5,1
+"tests/incorrect/strict-types.php",1,30,error,"Expected no space between equal sign and the directive value in a declare statement",PSR12.Files.DeclareStatement.SpaceFoundBeforeDirectiveValue,5,1
+"tests/incorrect/type-hints.php",6,4,error,"Function doesNotNeedDocumentationComment() has useless @param annotation for parameter $input.",SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation,5,1
+"tests/incorrect/type-hints.php",8,4,error,"Function doesNotNeedDocumentationComment() has useless @return annotation.",SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation,5,1
+"tests/incorrect/type-hints.php",14,40,error,"There must not be a space between the question mark and the type in nullable type declarations",PSR12.Functions.NullableTypeDeclaration.WhitespaceFound,5,1
+"tests/incorrect/type-hints.php",18,39,error,"There must not be a space before the colon in a return type declaration",PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon,5,1
+"tests/incorrect/type-hints.php",18,40,error,"There must be a single space between the colon and type in a return type declaration",PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeReturnType,5,1
+"tests/incorrect/type-hints.php",22,1,error,"Function missingTypeHints() does not have parameter type hint nor @param annotation for its parameter $input.",SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint,5,0
+"tests/incorrect/type-hints.php",22,1,error,"Function missingTypeHints() does not have return type hint nor @return annotation for its return value.",SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint,5,0
+"tests/incorrect/type-hints.php",27,1,error,"Function missingTraversableAnnotations() does not have @param annotation for its traversable parameter $input.",SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification,5,0
+"tests/incorrect/type-hints.php",27,1,error,"Function missingTraversableAnnotations() does not have @return annotation for its traversable return value.",SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification,5,0
+"tests/incorrect/type-hints.php",31,38,error,"Parameter $input has null default value, but is not marked as nullable.",SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue.NullabilityTypeMissing,5,1
+"tests/incorrect/type-hints.php",36,4,error,"Expected \"int\" but found \"integer\" in @param annotation.",SlevomatCodingStandard.TypeHints.LongTypeHints.UsedLongTypeHint,5,1
+"tests/incorrect/type-hints.php",38,4,error,"Expected \"bool\" but found \"boolean\" in @return annotation.",SlevomatCodingStandard.TypeHints.LongTypeHints.UsedLongTypeHint,5,1
+
