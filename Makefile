@@ -2,8 +2,8 @@ REPORT = full
 
 vendor: composer.json
 
-.PHONY: test
-test: vendor
+.PHONY: check
+check: vendor
 	vendor/bin/phpcs tests/correct/
 	vendor/bin/phpcs $(shell find tests/incorrect/* | sort) --report=$(REPORT) --report-file=phpcs.log --report-width=120; diff tests/expected.log phpcs.log
 
