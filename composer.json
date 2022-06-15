@@ -1,8 +1,8 @@
 {
     "name": "nicwortel/coding-standard",
-    "type": "phpcodesniffer-standard",
     "description": "My ruleset for PHP CodeSniffer",
     "license": "MIT",
+    "type": "phpcodesniffer-standard",
     "require": {
         "php": "^7.3 || ^8.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
@@ -13,6 +13,9 @@
         "liip/rmt": "^1.6"
     },
     "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
         "sort-packages": true
     }
 }
