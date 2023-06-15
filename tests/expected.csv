@@ -1,6 +1,7 @@
 "tests/incorrect/arrays.php",10,5,error,"Multi-line arrays must have a trailing comma after the last element.",SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma,5,1
 "tests/incorrect/arrays.php",5,20,error,"Short array syntax must be used to define arrays",Generic.Arrays.DisallowLongArraySyntax.Found,5,1
 "tests/incorrect/class-constant-visibility.php",9,5,error,"Visibility must be declared on all constants if your project supports PHP 7.1 or later",PSR12.Properties.ConstantVisibility.NotFound,5,0
+"tests/incorrect/commented-out-code.php",5,1,warning,"This comment is 50% valid code; is this commented out code?",Squiz.PHP.CommentedOutCode.Found,5,0
 "tests/incorrect/commenting.php",10,4,error,"Use of annotation @version is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
 "tests/incorrect/commenting.php",11,4,error,"Use of annotation @package is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
 "tests/incorrect/commenting.php",12,4,error,"Use of annotation @copyright is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1

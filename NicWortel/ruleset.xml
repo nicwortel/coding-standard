@@ -82,4 +82,7 @@
                     @type"/>
         </properties>
     </rule>
+
+    <!-- Disallow commented out code -->
+    <rule ref="Squiz.PHP.CommentedOutCode"/>
 </ruleset>
