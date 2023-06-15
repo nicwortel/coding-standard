@@ -1,5 +1,7 @@
 "tests/incorrect/arrays.php",10,5,error,"Multi-line arrays must have a trailing comma after the last element.",SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma,5,1
 "tests/incorrect/arrays.php",5,20,error,"Short array syntax must be used to define arrays",Generic.Arrays.DisallowLongArraySyntax.Found,5,1
+"tests/incorrect/attributes.php",11,19,error,"Multiple attributes per line are disallowed.",SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine.DisallowedMultipleAttributesPerLine,5,1
+"tests/incorrect/attributes.php",9,5,error,"Expected 0 blank lines between attribute and its target, both are on same line.",SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing.IncorrectLinesCountBetweenAttributeAndTarget,5,1
 "tests/incorrect/class-constant-visibility.php",9,5,error,"Visibility must be declared on all constants if your project supports PHP 7.1 or later",PSR12.Properties.ConstantVisibility.NotFound,5,0
 "tests/incorrect/commented-out-code.php",5,1,warning,"This comment is 50% valid code; is this commented out code?",Squiz.PHP.CommentedOutCode.Found,5,0
 "tests/incorrect/commenting.php",10,4,error,"Use of annotation @version is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1

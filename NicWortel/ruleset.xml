@@ -83,6 +83,10 @@
         </properties>
     </rule>
 
+    <!-- Force attributes to be directly above their target and disallow multiple attributes on 1 line -->
+    <rule ref="SlevomatCodingStandard.Attributes.AttributeAndTargetSpacing"/>
+    <rule ref="SlevomatCodingStandard.Attributes.DisallowMultipleAttributesPerLine"/>
+
     <!-- Disallow commented out code -->
     <rule ref="Squiz.PHP.CommentedOutCode"/>
 </ruleset>
