@@ -13,6 +13,10 @@
 "tests/incorrect/commenting.php",9,4,error,"Use of annotation @created is forbidden.",SlevomatCodingStandard.Commenting.ForbiddenAnnotations.AnnotationForbidden,5,1
 "tests/incorrect/control-structures.php",7,11,error,"Operator == is disallowed, use === instead.",SlevomatCodingStandard.Operators.DisallowEqualOperators.DisallowedEqualOperator,5,1
 "tests/incorrect/control-structures.php",7,11,error,"Yoda comparisons are disallowed.",SlevomatCodingStandard.ControlStructures.DisallowYodaComparison.DisallowedYodaComparison,5,1
+"tests/incorrect/header-blocks-newlines.php",1,1,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/header-blocks-newlines.php",2,24,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/header-blocks-newlines.php",3,14,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
+"tests/incorrect/header-blocks-newlines.php",4,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-alphabetical-order.php",8,1,error,"Use statements should be sorted alphabetically. The first wrong one is DateTime.",SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses,5,1
 "tests/incorrect/imports-order.php",7,13,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-order.php",8,22,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
@@ -34,7 +38,6 @@
 "tests/incorrect/strict-types.php",1,1,error,"Opening PHP tag must be on a line by itself",PSR12.Files.OpenTag.NotAlone,5,1
 "tests/incorrect/strict-types.php",1,28,error,"Expected no space between directive and the equals sign in a declare statement",PSR12.Files.DeclareStatement.SpaceFoundAfterDirective,5,1
 "tests/incorrect/strict-types.php",1,30,error,"Expected no space between equal sign and the directive value in a declare statement",PSR12.Files.DeclareStatement.SpaceFoundBeforeDirectiveValue,5,1
-"tests/incorrect/strict-types.php",1,7,error,"Expected 1 line before declare statement, found 0.",SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBeforeDeclare,5,1
 "tests/incorrect/type-hints.php",14,40,error,"There must not be a space between the question mark and the type in nullable type declarations",PSR12.Functions.NullableTypeDeclaration.WhitespaceFound,5,1
 "tests/incorrect/type-hints.php",18,39,error,"There must not be a space before the colon in a return type declaration",PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon,5,1
 "tests/incorrect/type-hints.php",18,40,error,"There must be a single space between the colon and type in a return type declaration",PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeReturnType,5,1

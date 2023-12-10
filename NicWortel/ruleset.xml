@@ -12,13 +12,15 @@
     </rule>
 
     <!-- Require strict types declaration -->
-    <!-- Exclude whitespace rules which are already covered by the PSR12 standard -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
             <property name="spacesCountAroundEqualsSign" value="0"/>
         </properties>
-        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
+
+        <!-- Blank lines and spaces requirements are already covered by the PSR12 standard, avoid duplicate errors -->
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectStrictTypesFormat"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBeforeDeclare"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceAfterDeclare"/>
     </rule>
 
     <!-- Enforce importing of all classes, functions and constants from other
