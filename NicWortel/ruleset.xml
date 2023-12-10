@@ -15,7 +15,6 @@
     <!-- Exclude whitespace rules which are already covered by the PSR12 standard -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
         <properties>
-            <property name="newlinesCountBetweenOpenTagAndDeclare" value="2"/>
             <property name="spacesCountAroundEqualsSign" value="0"/>
         </properties>
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectWhitespaceBetweenOpenTagAndDeclare"/>
