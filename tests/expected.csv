@@ -27,6 +27,9 @@
 "tests/incorrect/imports-unused.php",8,1,error,"Type array_filter is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
 "tests/incorrect/imports-unused.php",8,26,error,"Header blocks must be separated by a single blank line",PSR12.Files.FileHeader.SpacingAfterBlock,5,1
 "tests/incorrect/imports-unused.php",9,1,error,"Type PHP_VERSION is not used in this file.",SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse,5,1
+"tests/incorrect/members-newlines.php",11,20,error,"Expected 1 blank line between class members, found 0.",SlevomatCodingStandard.Classes.ClassMemberSpacing.IncorrectCountOfBlankLinesBetweenMembers,5,1
+"tests/incorrect/members-newlines.php",13,12,error,"Expected 1 blank line after method, found 0.",SlevomatCodingStandard.Classes.MethodSpacing.IncorrectLinesCountBetweenMethods,5,1
+"tests/incorrect/members-newlines.php",13,12,error,"Expected 1 blank line between class members, found 0.",SlevomatCodingStandard.Classes.ClassMemberSpacing.IncorrectCountOfBlankLinesBetweenMembers,5,1
 "tests/incorrect/namespaces.php",10,12,error,"Class \DateTime should not be referenced via a fully qualified name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFullyQualifiedName,5,1
 "tests/incorrect/namespaces.php",12,10,error,"Function array_filter() should not be referenced via a fallback global name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName,5,1
 "tests/incorrect/namespaces.php",14,12,error,"Constant PHP_VERSION should not be referenced via a fallback global name, but via a use statement.",SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName,5,1

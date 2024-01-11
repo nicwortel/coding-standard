@@ -45,6 +45,14 @@
         </properties>
     </rule>
 
+    <!-- Require a blank line between class members (constants, properties, methods) -->
+    <!-- Between properties and constants without annotations or attributes, the blank line is optional -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassMemberSpacing"/>
+    <rule ref="SlevomatCodingStandard.Classes.ConstantSpacing"/>
+    <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/>
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing"/>
+    <rule ref="SlevomatCodingStandard.Classes.EnumCaseSpacing"/>
+
     <!-- Use PHP native type hints whenever possible. Use docblocks only when
     native type hints don't provide enough information. -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint"/>
